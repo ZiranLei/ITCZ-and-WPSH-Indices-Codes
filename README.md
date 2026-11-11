@@ -8,14 +8,13 @@ This repository contains the NCL scripts used to calculate the Intertropical Con
 
 | File | Description | Input | Output |
 |------|-------------|-------|--------|
-| `calc_ITCZ_lat.ncl` | Mean latitudinal position of the ITCZ based on ERA5 500-hPa vertical velocity (ω | `Vertical_velocity.nc` | `ITCZ_lat_output.csv` |
-| `calc_WPSH_NBI.ncl` | WPSH Northern Boundary Index: northernmost 5880-gpm crossing at 500 hPa | `Geopotential.nc` | `WPSH_North_Boundary_Index.csv` |
-| `calc_WPSH_RI.ncl` | WPSH Ridge Line Index: latitude where 500-hPa zonal wind changes sign (u = 0) and geopotential ≥ 5880 gpm | `Geopotential.nc` , `U_component_wind.nc`  | `WPSH_Ridge_Line_Index.csv` |
+| `calc_ITCZ_lat.ncl` | Mean latitudinal position of the ITCZ | `Vertical_velocity.nc` | `ITCZ_lat_output.csv` |
+| `calc_WPSH_NBI.ncl` | WPSH Northern Boundary Index | `Geopotential.nc` | `WPSH_North_Boundary_Index.csv` |
+| `calc_WPSH_RI.ncl` | WPSH Ridge Line Index | `Geopotential.nc` , `U_component_wind.nc`  | `WPSH_Ridge_Line_Index.csv` |
 
 ## Requirements
 
 - NCAR Command Language (NCL) **v6.6.2 or later**
-- ERA5 500-hPa data (e.g., daily or monthly means)
 
 ## Usage
 
